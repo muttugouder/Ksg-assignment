@@ -1,0 +1,35 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ECommerceAutomation {
+
+    public static void main(String[] args) {
+        // Set the path to the ChromeDriver executable
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+
+        // Create a new instance of the ChromeDriver
+        WebDriver driver = new ChromeDriver();
+
+        try {
+            // 1. Visit your own ecommerce site
+            driver.get("https://your-ecommerce-site.com");
+
+            // 2. Search for iPhone 13
+            WebElement searchBox = driver.findElement(By.id("search-box-id"));
+            searchBox.sendKeys("iphone13");
+            searchBox.submit();
+
+            // 3. Get the price
+            WebElement priceElement = driver.findElement(By.cssSelector(".product-price-class"));
+            String price = priceElement.getText();
+
+            System.out.println("iPhone 13 price on your ecommerce site: " + price);
+
+        } finally {
+            // Close the browser
+            driver.quit();
+        }
+    }
+}
