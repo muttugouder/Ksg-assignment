@@ -8,8 +8,8 @@ import org.openqa.selenium.WebElement;
 
 
 public class JavaTodo {
-    String username = "YOUR_LAMBDATEST_USERNAME";
-    String accesskey = "YOUR_LAMBDATEST_ACCESS_KEY";
+    String username = "gmuttu90";
+    String accesskey = "r4VHysUP7KD39xWoBJjWYYwn09h3faCuhMkLXNSpDjumCPVnUB";
     static RemoteWebDriver driver = null;
     String gridURL = "@hub.lambdatest.com/wd/hub";
     boolean status = false;
