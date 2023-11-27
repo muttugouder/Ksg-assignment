@@ -7,7 +7,9 @@ public class ECommerceAutomation {
 
     public static void main(String[] args) {
         // Set the path to the ChromeDriver executable
-        System.setProperty("webdriver.chrome.driver", "C:\chromedriver_win32\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\chromedriver_win32\chromedriver.exe");
+          System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
+
 
         // Create a new instance of the ChromeDriver
         WebDriver driver = new ChromeDriver();
